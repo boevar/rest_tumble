@@ -1,0 +1,9 @@
+<% form_tag posts_path do -%>    
+ <%= render :partial => 'posts/form' %>     
+  
+ <fieldset>       
+   <button type="submit">Save</button>       
+   <%= link_to 'Cancel', posts_path %>    
+ </fieldset>  
+<% end -%>   
+ 

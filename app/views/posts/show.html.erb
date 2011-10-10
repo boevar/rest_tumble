@@ -1,0 +1,7 @@
+# show.html.erb this is
+<p><%= h(@post.message) -%></p>   
+ 
+<% form_tag post_path(@post), :method => :delete do -%>    
+ <%= link_to 'Edit', edit_post_path(@post) -%>    
+ <button type="submit">Delete</button>  
+<% end -%>

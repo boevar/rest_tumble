@@ -1,0 +1,11 @@
+<%= link_to 'New message', new_post_path %>  
+<hr />  
+<% if @posts.empty? -%>    
+ <p>There are no posts</p>  
+<% else -%>    
+ <% @posts.each do |post| -%>      
+   <p>        
+     <%= link_to h(post.message), post_path(post) -%>      
+   </p>    
+ <% end -%>  
+<% end -%>
